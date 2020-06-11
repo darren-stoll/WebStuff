@@ -1,0 +1,52 @@
+body {
+    padding-top: 40px;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #081b08;
+}
+
+#navbar ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#navbar ul li {
+    padding: 0px 14px 0px 14px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: Courier, sans-serif;
+}
+
+#welcome-section {
+    height: 100vh;
+    margin-top: -68px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects {
+    height: 100vh;
+    margin-top: -68px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-tile {
+    border-style: solid;
+    max-width: 200px;
+    padding: 40px;
+}
