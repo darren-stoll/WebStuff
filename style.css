@@ -2,6 +2,9 @@ body {
     padding-top: 40px;
 }
 
+
+/* navbar start */
+
 #navbar {
     position: fixed;
     top: 0;
@@ -15,6 +18,7 @@ body {
     padding: 0;
     display: flex;
     justify-content: flex-end;
+    padding-right: 30px;
 }
 
 #navbar ul li {
@@ -26,6 +30,9 @@ body {
     color: #ffffff;
     font-family: Courier, sans-serif;
 }
+
+
+/* navbar end */
 
 #welcome-section {
     height: 100vh;
@@ -40,7 +47,7 @@ body {
     height: 100vh;
     margin-top: -68px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -49,4 +56,5 @@ body {
     border-style: solid;
     max-width: 200px;
     padding: 40px;
+    margin: 20px;
 }
