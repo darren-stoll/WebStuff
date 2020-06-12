@@ -38,6 +38,13 @@ body {
 }
 
 
+/* Bootstrap override to fix padding on navbar */
+
+#bootstrap-override-ul {
+    margin: auto;
+}
+
+
 /* navbar end */
 
 #editor {

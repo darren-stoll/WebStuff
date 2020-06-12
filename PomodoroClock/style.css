@@ -36,14 +36,14 @@ body {
 }
 
 
-/* navbar end */
-
-
 /* Bootstrap override to fix padding on navbar */
 
 #bootstrap-override-ul {
     margin: auto;
 }
+
+
+/* navbar end */
 
 
 /* Begin Arrow from w3schools */
