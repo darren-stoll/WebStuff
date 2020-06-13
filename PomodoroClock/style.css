@@ -1,5 +1,5 @@
 body {
-    background-color: #003399;
+    background-color: #b3b4a2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,6 +83,11 @@ i {
     display: flex;
     flex-direction: column;
     width: 100%;
+}
+
+#time-left {
+    font-size: 36px;
+    font-family: 'Courier New', Courier, monospace
 }
 
 #timer-wrapper {
