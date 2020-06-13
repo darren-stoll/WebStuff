@@ -50,18 +50,29 @@ body {
     align-items: center;
 }
 
-#projects {
+#project-section {
+    text-align: center;
     height: 100vh;
     margin-top: -68px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#projects {
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .project-tile {
     border-style: solid;
-    max-width: 200px;
     padding: 40px;
     margin: 20px;
+    height: 220px;
+    text-align: center;
+}
+
+h3 {
+    padding-top: 1.5em;
 }
