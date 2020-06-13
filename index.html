@@ -1,10 +1,11 @@
 <head>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="./script.js"></script>
     <title>Project Portfolio - Darren Stoll</title>
 </head>
 
-<body>
+<body onload="animateHTML().init();">
     <header>
         <nav id="navbar">
             <ul id="bootstrap-override-ul">
@@ -18,7 +19,7 @@
             <h1>Welcome!</h1>
             <p>I'm an aspiring web developer!</p>
         </section>
-        <section id="project-section" name="project-section">
+        <section id="project-section" class="hidden" name="project-section">
             <h2>Highlighted showcase projects</h2>
             <div id="projects" name="projects">
                 <div class="project-tile w-25">
@@ -50,4 +51,5 @@
             </div>
         </section>
     </main>
+
 </body>
