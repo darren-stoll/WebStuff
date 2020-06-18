@@ -63,7 +63,6 @@ body {
 }
 
 #project-section {
-    text-align: center;
     height: 100vh;
     margin-top: -68px;
     display: flex;
@@ -74,19 +73,41 @@ body {
 #projects {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .project-tile {
+    text-align: center;
     border-style: solid;
-    padding: 40px;
     margin: 20px;
-    height: 220px;
+}
+
+.project-tile a .projectLink {
+    padding-top: 40px;
+    padding-bottom: 8px;
+}
+
+
+/* Separate div identifier for small rectangle on bottom */
+
+.bottomBarOfProjectTile {
+    display: flex;
+    flex-direction: row;
+}
+
+.projectInfo {
+    text-align: right;
+    vertical-align: bottom;
+    margin-top: 14px;
+}
+
+h2 {
     text-align: center;
 }
 
 h3 {
     padding-top: 1.5em;
+    display: block;
+    margin-bottom: 0;
 }
 
 
@@ -109,3 +130,109 @@ h3 {
 .hidden {
     opacity: 0;
 }
+
+
+/* Modal window details - based on info from https://www.cssscript.com/simple-responsive-css-modal-dialog/ */
+
+.modal-container {
+    margin: 0 auto;
+}
+
+.modal-container .modal-backdrop {
+    height: 0;
+    width: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity 0.2s ease-in;
+}
+
+.modal-container #modal-toggle {
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.modal-container #modal-toggle:checked {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9;
+    opacity: 0;
+}
+
+.modal-container #modal-toggle:checked~.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9;
+    pointer-events: none;
+    opacity: 1;
+}
+
+.modal-container #modal-toggle:checked~.modal-backdrop .modal-content {
+    background-color: #fff;
+    max-width: 400px;
+    width: 100%;
+    height: 280px;
+    padding: 10px 30px;
+    position: absolute;
+    left: calc(50% - 200px);
+    top: 12%;
+    border-radius: 4px;
+    z-index: 999;
+    pointer-events: auto;
+    cursor: auto;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 400px) {
+    .modal-container #modal-toggle:checked~.modal-backdrop .modal-content {
+        left: 0;
+    }
+}
+
+.modal-container #modal-toggle:checked~.modal-backdrop .modal-content .modal-close {
+    color: #666;
+    position: absolute;
+    right: 2px;
+    top: 0;
+    padding-top: 7px;
+    background: #fff;
+    font-size: 16px;
+    width: 25px;
+    height: 28px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+.modal-container #modal-toggle:checked~.modal-backdrop .modal-content .modal-close.button {
+    top: initial;
+    bottom: 20px;
+    right: 20px;
+    background: #4CAF50;
+    color: #fff;
+    width: 50px;
+    border-radius: 2px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.modal-container #modal-toggle:checked~.modal-backdrop .modal-content .modal-close.button:hover {
+    color: #fff;
+    background: #1E824C;
+}
+
+.modal-container #modal-toggle:checked~.modal-backdrop .modal-content .modal-close:hover {
+    color: #333;
+}
+
+
+/* Modal window details end */
