@@ -184,7 +184,7 @@ h3 {
     padding: 10px 30px;
     position: absolute;
     left: calc(50% - 200px);
-    top: 12%;
+    top: 45%;
     border-radius: 4px;
     z-index: 999;
     pointer-events: auto;
@@ -211,6 +211,14 @@ h3 {
     font-weight: bold;
     text-align: center;
     cursor: pointer;
+}
+
+
+/* Override for display in bootstrap */
+
+label {
+    display: inherit;
+    margin-bottom: 0;
 }
 
 .modal-container #modal-toggle:checked~.modal-backdrop .modal-content .modal-close.button {
