@@ -36,3 +36,5 @@ var animateHTML = function() {
         init: init
     };
 };
+
+//Implement bootstrap modal features
