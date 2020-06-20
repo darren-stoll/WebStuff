@@ -63,7 +63,6 @@ body {
 }
 
 #project-section {
-    text-align: center;
     height: 100vh;
     margin-top: -68px;
     display: flex;
@@ -74,19 +73,51 @@ body {
 #projects {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
-.project-tile {
+.projectTile {
+    text-align: center;
     border-style: solid;
-    padding: 40px;
     margin: 20px;
-    height: 220px;
+    transition: 0.5s;
+}
+
+.projectTile a {
+    text-decoration: none;
+}
+
+.projectTile:hover {
+    background-color: #cceee7;
+    box-shadow: 1px 1px 1px #141414;
+}
+
+.projectTile a .projectLink {
+    padding-top: 40px;
+    padding-bottom: 8px;
+}
+
+
+/* Separate div identifier for small rectangle on bottom */
+
+.bottomBarOfProjectTile {
+    display: flex;
+    flex-direction: row;
+}
+
+.projectInfo {
+    text-align: right;
+    vertical-align: bottom;
+    margin-top: 14px;
+}
+
+h2 {
     text-align: center;
 }
 
 h3 {
     padding-top: 1.5em;
+    display: block;
+    margin-bottom: 0;
 }
 
 
@@ -108,4 +139,9 @@ h3 {
 
 .hidden {
     opacity: 0;
+}
+
+.modal-body p,
+ul {
+    text-align: left;
 }
