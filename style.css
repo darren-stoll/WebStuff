@@ -75,13 +75,23 @@ body {
     justify-content: center;
 }
 
-.project-tile {
+.projectTile {
     text-align: center;
     border-style: solid;
     margin: 20px;
+    transition: 0.5s;
 }
 
-.project-tile a .projectLink {
+.projectTile a {
+    text-decoration: none;
+}
+
+.projectTile:hover {
+    background-color: #cceee7;
+    box-shadow: 1px 1px 1px #141414;
+}
+
+.projectTile a .projectLink {
     padding-top: 40px;
     padding-bottom: 8px;
 }
@@ -129,4 +139,9 @@ h3 {
 
 .hidden {
     opacity: 0;
+}
+
+.modal-body p,
+ul {
+    text-align: left;
 }
